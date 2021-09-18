@@ -5,6 +5,11 @@
       "factory": "./lib/service/service.factory#main",
       "description": "Create a React service.",
       "schema": "./lib/service/schema.json"
+    },
+    "page": {
+      "factory": "./lib/page/page.factory#main",
+      "description": "Create a React page.",
+      "schema": "./lib/page/schema.json"
     }
   }
 }

@@ -15,7 +15,7 @@ import {
 import { isNullOrUndefined } from 'util';
 import { Location, NameParser } from '../../utils/name.parser';
 import { mergeSourceRoot } from '../../utils/source-root.helpers';
-import { ServiceOptions } from './service.schema';
+import { ServiceOptions } from './page.schema';
 
 export function main(options: ServiceOptions): Rule {
     options = transform(options);
@@ -40,7 +40,7 @@ function transform(source: ServiceOptions): ServiceOptions {
     target.path = strings.dasherize(location.path);
     target.language = target.language !== undefined ? target.language : 'ts';
 
-    target.path = join(target.path as Path, 'services');
+    target.path = join(target.path as Path, 'pages');
     return target;
 }
 

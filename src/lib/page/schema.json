@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "SchematicsNextjsPage",
+    "title": "Next.js Page Options Schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the page.",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "x-prompt": "What name would you like to use for the page?"
+        },
+        "path": {
+            "type": "string",
+            "format": "path",
+            "description": "The path to create the page."
+        },
+        "language": {
+            "type": "string",
+            "description": "React page language (tsx/jsx)."
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
