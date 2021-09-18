@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "SchematicsReactHook",
+    "title": "React Hook Options Schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the page.",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "x-prompt": "What name would you like to use for the Hook?"
+        },
+        "path": {
+            "type": "string",
+            "format": "path",
+            "$default": {
+                "$source": "argv",
+                "index": 1
+            },
+            "description": "The path to create the Hook."
+        },
+        "language": {
+            "type": "string",
+            "description": "React Hook language (ts/js)."
+        }
+    },
+    "required": [
+        "name"
+    ]
+}

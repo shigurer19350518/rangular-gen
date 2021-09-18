@@ -15,6 +15,11 @@
       "factory": "./lib/component/component.factory#main",
       "description": "Create a React component.",
       "schema": "./lib/component/schema.json"
+    },
+    "hook": {
+      "factory": "./lib/hook/hook.factory#main",
+      "description": "Create a React hooks.",
+      "schema": "./lib/hook/schema.json"
     }
   }
 }
