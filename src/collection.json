@@ -20,6 +20,11 @@
       "factory": "./lib/hook/hook.factory#main",
       "description": "Create a React hooks.",
       "schema": "./lib/hook/schema.json"
+    },
+    "interface": {
+      "factory": "./lib/interface/interface.factory#main",
+      "description": "Create a interface.",
+      "schema": "./lib/interface/schema.json"
     }
   }
 }
