@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "service": {
+      "factory": "./lib/service/service.factory#main",
+      "description": "Create a React service.",
+      "schema": "./lib/service/schema.json"
+    }
+  }
+}
