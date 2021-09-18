@@ -16,7 +16,11 @@
         "path": {
             "type": "string",
             "format": "path",
-            "description": "The path to create the service."
+            "description": "The path to create the service.",
+            "$default": {
+                "$source": "argv",
+                "index": 1
+            }
         },
         "language": {
             "type": "string",

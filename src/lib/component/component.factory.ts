@@ -15,7 +15,7 @@ import {
 import { isNullOrUndefined } from 'util';
 import { Location, NameParser } from '../../utils/name.parser';
 import { mergeSourceRoot } from '../../utils/source-root.helpers';
-import { ServiceOptions } from './service.schema';
+import { ServiceOptions } from './component.schema';
 
 export function main(options: ServiceOptions): Rule {
     options = transform(options);

@@ -40,7 +40,6 @@ function transform(source: ServiceOptions): ServiceOptions {
     target.path = strings.dasherize(location.path);
     target.language = target.language !== undefined ? target.language : 'ts';
 
-    target.path = join(target.path as Path, 'pages');
     return target;
 }
 
