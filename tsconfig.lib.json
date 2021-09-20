@@ -9,6 +9,6 @@
     "sourceMap": false,
     "skipLibCheck": true
   },
-  "include": ["src/lib", "src/utils", "src/index.ts"],
-  "exclude": ["node_modules", "src/**/*.test.ts", "src/**/files/**"]
+  "include": ["schematics/utils", "schematics/lib", "schematics/index.ts"],
+  "exclude": ["node_modules", "schematics/**/*.test.ts", "schematics/**/files/**"]
 }
